@@ -108,7 +108,7 @@ h4 {
     margin: 20px 0;
     background-color: transparent;
     text-decoration: none;
-    width: 95%;
+    width: 100%;
     max-width: 400px;
     border: 1px solid #575757;
     border-radius: 10px;
@@ -219,7 +219,7 @@ h4 {
     }
 
     .link img {
-        width: 38px; /* garante que o ícone diminua */
+        width: 35px; /* garante que o ícone diminua */
     }
 
     .link h6 {
