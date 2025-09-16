@@ -1,0 +1,234 @@
+body {
+    margin: 15px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #ffffff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.perfil {
+    width: 250px;
+    max-width: auto;
+    height: auto;
+    border: 3px solid #ccee66;
+    border-radius: 50%;
+    margin-top: 15px;
+
+
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    background-color: #ccee66;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: #000000;
+    position: relative;
+    margin-left: 200px;
+    margin-top: -30px;
+    
+    font-size: clamp(14px, 2w, 18px);
+}
+
+.status-online {
+    width: 10px; /* Largura da bolinha */
+    height: 10px; /* Altura da bolinha */
+    background-color: green; /* Cor da bolinha */
+    border-radius: 50%; /* Faz a bolinha ser redonda */
+    margin-right: 8px; /* Espaço entre a bolinha e o nome */
+}
+
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+h1 {
+    font-size: clamp(28px, 6vw, 50px);
+    font-weight: bold;
+    color: #ccee66;
+    margin-bottom: 2px;
+    padding: 0;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    color: #ccee66;
+    margin: 0 7px
+}
+
+h4 {
+    font-size: clamp(20px, 4vw, 30px);
+    font-weight: lighter;
+    padding: 0;
+    margin: 10px;
+}
+
+.redes-sociais {
+
+    img {
+        width: clamp(45px, 6vw, 50px);
+    }
+}
+
+.sub-title {
+    font-size: clamp(18px, 3vw, 23px);
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 30px;
+    padding: 5px 20px;
+    margin: 20px 0;
+    background-color: transparent;
+    text-decoration: none;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #575757;
+    border-radius: 10px;
+    transition: 0.3s ease;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    h6 {
+        color: #ffffff;
+        margin: 4px;
+        font-size: 22px;
+        padding-top: 10px;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.6);
+        margin-top: 0;
+        font-size: clamp(16px, 2.5vw, 18px);
+
+    }
+}
+
+.link:hover {
+    opacity: 0.6;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px #ccee66;
+
+
+}
+
+.link:nth-child(1):hover {
+    background: linear-gradient(to right, #6E7076, #A855F7);
+
+}
+
+.link:nth-child(2):hover {
+    background: linear-gradient(to right, #ff403d, #ee0b92, #da00cb);
+
+}
+
+.link:nth-child(3):hover {
+    background: linear-gradient(to right, #075e54, #25d366);
+
+}
+
+.link:nth-child(4):hover {
+    background: linear-gradient(to right, #2b3137, #24292e);
+
+}
+
+.link:nth-child(5):hover {
+    background: linear-gradient(to right, #075e54, #25d366);
+
+}
+
+
+@media (max-width: 768px) {
+    .perfil {
+        width: 200px;
+    }
+
+    .usuario {
+        padding: 8px 15px;
+        font-size: 16px;
+    }
+    .sub-title{
+        margin: 0, 10px, 20px, 10px;
+    }
+
+    .link {
+        gap: 15px;
+        padding: 8px 15px;
+        max-width: 100%;
+    }
+
+    .link h6 {
+        font-size: 20px;
+    }
+
+    .link p {
+        font-size: 16px;
+    }
+
+    .redes-sociais img {
+        width: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .perfil {
+        width: 150px;
+    }
+
+    .usuario {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    .link {
+        gap: 12px;
+        padding: 8px 8px;
+        max-width: 100%;
+    }
+
+    .link img {
+        width: 32px; /* garante que o ícone diminua */
+    }
+
+    .link h6 {
+        font-size: 16px;
+    }
+
+    .link p {
+        font-size: 15px;
+    }
+}
+
+
